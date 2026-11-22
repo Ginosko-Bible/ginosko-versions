@@ -18,6 +18,8 @@ self.addEventListener("fetch", (e) => {
   if (r.method !== "GET") return;
   const u = new URL(r.url);
   if (u.origin !== self.location.origin) return;
+  // la version d'essai (sous-dossier essai/) a son propre service worker : celui du site public n'y touche pas
+  if (u.pathname.startsWith(new URL("./essai/", self.location).pathname)) return;
   if (r.mode === "navigate") {
     e.respondWith(fetch(r).then((rep) => {
       const copie = rep.clone(); caches.open(CACHE).then((c) => c.put("./", copie)); return rep;
