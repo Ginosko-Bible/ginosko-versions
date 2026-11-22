@@ -1,0 +1,576 @@
+{
+ "source": "Vitesses : L. Casson, « Speed Under Sail of Ancient Ships », TAPA 82 (1951), et Ships and Seamanship in the Ancient World (1971). Ports : lieux d'OpenBible.info (CC BY 4.0). Liaisons : routes côtières et traversées attestées (Actes 13-28, Pline, Strabon), simplifiées. Lac de Galilée : barque de Ginosar (Autorité des antiquités d'Israël, 1986) ; Jean 6:19, Marc 6:47-48.",
+ "navires": {
+  "marchand": {
+   "nom": "Navire marchand",
+   "nom_en": "Merchant ship",
+   "explication": "Grand voilier (comme le navire de blé d'Alexandrie, Actes 27:6) : navigue jour et nuit.",
+   "explication_en": "Large sailing ship (like the Alexandrian grain ship, Acts 27:6): sails day and night.",
+   "heures_par_jour": 24,
+   "escale_chaque_soir": false,
+   "noeuds": {
+    "large": {
+     "favorable": 5.0,
+     "contraire": 2.0
+    },
+    "cote": {
+     "favorable": 3.5,
+     "contraire": 2.0
+    }
+   },
+   "reseau": "mer"
+  },
+  "caboteur": {
+   "nom": "Caboteur (escale chaque soir)",
+   "nom_en": "Coaster (port every night)",
+   "explication": "Petit bateau qui longe les côtes de jour et s'arrête le soir dans un port (Actes 20:13-15 ; 21:1-3).",
+   "explication_en": "Small boat that follows the coast by day and stops in a port every evening (Acts 20:13-15; 21:1-3).",
+   "heures_par_jour": 15,
+   "escale_chaque_soir": true,
+   "noeuds": {
+    "large": {
+     "favorable": 4.0,
+     "contraire": 1.8
+    },
+    "cote": {
+     "favorable": 4.0,
+     "contraire": 1.8
+    }
+   },
+   "reseau": "mer"
+  },
+  "barque": {
+   "nom": "Barque de pêche (lac de Galilée)",
+   "nom_en": "Fishing boat (Sea of Galilee)",
+   "explication": "Barque du Ier siècle (celle de Ginosar : 8,3 m, quatre rameurs et un barreur, une voile) : à la voile avec le vent, à la rame par temps calme, très lente contre la tempête (Marc 6:48).",
+   "explication_en": "First-century boat (like the Ginosar boat: 8.3 m, four rowers and a helmsman, one sail): under sail with the wind, rowed in calm weather, very slow against a storm (Mark 6:48).",
+   "heures_par_jour": 24,
+   "escale_chaque_soir": false,
+   "reseau": "lac",
+   "noeuds": {
+    "lac": {
+     "favorable": 3.0,
+     "calme": 2.0,
+     "contraire": 0.3
+    }
+   },
+   "_sources": "Voile : borne basse de Casson le long des côtes (3 nœuds). Rame : 2 nœuds, allure soutenue des navires à rames (Tarn, cité par Casson 1951). Tempête : Jean 6:19 et Marc 6:47-48, 25 à 30 stades (environ 5 km) ramés du soir à la quatrième veille (environ 9 h), soit 0,3 nœud."
+  }
+ },
+ "facteur_detour": {
+  "large": 1.0,
+  "cote": 1.1,
+  "lac": 1.0
+ },
+ "reseaux": {
+  "mer": {
+   "nom": "Méditerranée",
+   "ports": [
+    "aa8edd2",
+    "ac87d4c",
+    "ae023a9",
+    "a58735e",
+    "a70c56b",
+    "abc2af0",
+    "a160272",
+    "a98e4d7",
+    "a9a2541",
+    "afbf1b5",
+    "a6d306d",
+    "a666ea0",
+    "ac744c1",
+    "aa4b3e2",
+    "ade301b",
+    "a4218ee",
+    "ab793ce",
+    "a398e5d",
+    "a55027d",
+    "a6f61d3",
+    "acf6ec0",
+    "a5feb15",
+    "a8f60f3",
+    "a4c2c75",
+    "a2e65fb",
+    "a33910d",
+    "a184f3a",
+    "a0a2ca7",
+    "a91c509",
+    "a68750d",
+    "a6a7150",
+    "afa9d8e",
+    "a1fe6e7",
+    "aa31dd3",
+    "a6f437a",
+    "af43cde",
+    "afa863b",
+    "a314765",
+    "aee7248",
+    "a1c44ea",
+    "aae626a",
+    "a9ee958",
+    "aca2b0a",
+    "a57835d",
+    "a1e3697",
+    "a63bb26",
+    "a4488e9"
+   ],
+   "liaisons": [
+    [
+     "aa8edd2",
+     "ac87d4c",
+     "cote"
+    ],
+    [
+     "ac87d4c",
+     "ae023a9",
+     "cote"
+    ],
+    [
+     "ae023a9",
+     "a58735e",
+     "cote"
+    ],
+    [
+     "a58735e",
+     "a70c56b",
+     "cote"
+    ],
+    [
+     "a70c56b",
+     "abc2af0",
+     "cote"
+    ],
+    [
+     "abc2af0",
+     "a160272",
+     "cote"
+    ],
+    [
+     "a160272",
+     "a98e4d7",
+     "cote"
+    ],
+    [
+     "a98e4d7",
+     "a9a2541",
+     "cote"
+    ],
+    [
+     "a9a2541",
+     "afbf1b5",
+     "cote"
+    ],
+    [
+     "afbf1b5",
+     "a6d306d",
+     "cote"
+    ],
+    [
+     "a6d306d",
+     "a666ea0",
+     "cote"
+    ],
+    [
+     "a666ea0",
+     "ac744c1",
+     "cote"
+    ],
+    [
+     "ac744c1",
+     "aa4b3e2",
+     "cote"
+    ],
+    [
+     "aa4b3e2",
+     "ade301b",
+     "cote"
+    ],
+    [
+     "ade301b",
+     "a4218ee",
+     "cote"
+    ],
+    [
+     "a4218ee",
+     "ab793ce",
+     "cote"
+    ],
+    [
+     "ab793ce",
+     "a398e5d",
+     "cote"
+    ],
+    [
+     "a398e5d",
+     "a55027d",
+     "cote"
+    ],
+    [
+     "a55027d",
+     "a6f61d3",
+     "cote"
+    ],
+    [
+     "a6f61d3",
+     "acf6ec0",
+     "cote"
+    ],
+    [
+     "acf6ec0",
+     "a5feb15",
+     "cote"
+    ],
+    [
+     "acf6ec0",
+     "a8f60f3",
+     "cote"
+    ],
+    [
+     "acf6ec0",
+     "a4c2c75",
+     "cote"
+    ],
+    [
+     "a5feb15",
+     "a4c2c75",
+     "cote"
+    ],
+    [
+     "a4c2c75",
+     "a2e65fb",
+     "cote"
+    ],
+    [
+     "a4c2c75",
+     "a33910d",
+     "cote"
+    ],
+    [
+     "a33910d",
+     "a184f3a",
+     "cote"
+    ],
+    [
+     "a33910d",
+     "a0a2ca7",
+     "cote"
+    ],
+    [
+     "a0a2ca7",
+     "a91c509",
+     "cote"
+    ],
+    [
+     "a91c509",
+     "a68750d",
+     "large"
+    ],
+    [
+     "a68750d",
+     "a6a7150",
+     "large"
+    ],
+    [
+     "a6a7150",
+     "afa9d8e",
+     "cote"
+    ],
+    [
+     "afa9d8e",
+     "a1fe6e7",
+     "cote"
+    ],
+    [
+     "a1fe6e7",
+     "aa31dd3",
+     "cote"
+    ],
+    [
+     "aa31dd3",
+     "a6f437a",
+     "cote"
+    ],
+    [
+     "a6f437a",
+     "af43cde",
+     "cote"
+    ],
+    [
+     "aa31dd3",
+     "a5feb15",
+     "large"
+    ],
+    [
+     "a6d306d",
+     "afa863b",
+     "large"
+    ],
+    [
+     "afa863b",
+     "a314765",
+     "cote"
+    ],
+    [
+     "a314765",
+     "ac744c1",
+     "large"
+    ],
+    [
+     "a314765",
+     "aee7248",
+     "large"
+    ],
+    [
+     "ade301b",
+     "a160272",
+     "large"
+    ],
+    [
+     "aa4b3e2",
+     "aee7248",
+     "large"
+    ],
+    [
+     "a4218ee",
+     "aee7248",
+     "large"
+    ],
+    [
+     "aa8edd2",
+     "aee7248",
+     "cote"
+    ],
+    [
+     "a58735e",
+     "a314765",
+     "large"
+    ],
+    [
+     "ab793ce",
+     "a1c44ea",
+     "large"
+    ],
+    [
+     "a1c44ea",
+     "aae626a",
+     "cote"
+    ],
+    [
+     "aae626a",
+     "a9ee958",
+     "cote"
+    ],
+    [
+     "a9ee958",
+     "aca2b0a",
+     "large"
+    ],
+    [
+     "aae626a",
+     "aca2b0a",
+     "large"
+    ],
+    [
+     "aca2b0a",
+     "a57835d",
+     "large"
+    ],
+    [
+     "aee7248",
+     "aae626a",
+     "large"
+    ],
+    [
+     "a57835d",
+     "a1e3697",
+     "large"
+    ],
+    [
+     "a1e3697",
+     "a63bb26",
+     "cote"
+    ],
+    [
+     "a63bb26",
+     "a4488e9",
+     "large"
+    ],
+    [
+     "af43cde",
+     "a63bb26",
+     "large"
+    ],
+    [
+     "af43cde",
+     "a1e3697",
+     "large"
+    ],
+    [
+     "a398e5d",
+     "a4218ee",
+     "cote"
+    ]
+   ],
+   "port_max_km": 60
+  },
+  "lac": {
+   "nom": "Lac de Galilée",
+   "ports": [
+    "af2161c",
+    "a91b732",
+    "ad14067",
+    "ac9adc9",
+    "aabf84a",
+    "a7de69e"
+   ],
+   "liaisons": [
+    [
+     "af2161c",
+     "a91b732",
+     "lac"
+    ],
+    [
+     "af2161c",
+     "ad14067",
+     "lac"
+    ],
+    [
+     "af2161c",
+     "ac9adc9",
+     "lac"
+    ],
+    [
+     "af2161c",
+     "aabf84a",
+     "lac"
+    ],
+    [
+     "af2161c",
+     "a7de69e",
+     "lac"
+    ],
+    [
+     "a91b732",
+     "ad14067",
+     "lac"
+    ],
+    [
+     "a91b732",
+     "ac9adc9",
+     "lac"
+    ],
+    [
+     "a91b732",
+     "aabf84a",
+     "lac"
+    ],
+    [
+     "a91b732",
+     "a7de69e",
+     "lac"
+    ],
+    [
+     "ad14067",
+     "ac9adc9",
+     "lac"
+    ],
+    [
+     "ad14067",
+     "aabf84a",
+     "lac"
+    ],
+    [
+     "ad14067",
+     "a7de69e",
+     "lac"
+    ],
+    [
+     "ac9adc9",
+     "aabf84a",
+     "lac"
+    ],
+    [
+     "ac9adc9",
+     "a7de69e",
+     "lac"
+    ],
+    [
+     "aabf84a",
+     "a7de69e",
+     "lac"
+    ]
+   ],
+   "port_max_km": 12,
+   "_note": "Ports du lac : Capernaüm, Bethsaïda, Magadan (Magdala), Tibériade, Gergesa (rive est), plaine de Génésareth. Le lac (21 km sur 13) se traverse en ligne droite."
+  }
+ },
+ "positions_ports": {
+  "_note": "Port antique quand OpenBible donne le centre de l'île : Samothrace = Palaeopolis (côte nord), Cos = la ville de Cos, Samos = Pythagoreio, Rhodes = la ville de Rhodes.",
+  "a68750d": [
+   25.531,
+   40.501
+  ],
+  "a398e5d": [
+   27.288,
+   36.894
+  ],
+  "acf6ec0": [
+   26.94,
+   37.69
+  ],
+  "a4218ee": [
+   28.227,
+   36.451
+  ]
+ },
+ "ports_de": {
+  "_note": "Lieu à l'intérieur des terres → son port dans le récit biblique : Rome → Pouzzoles (Actes 28:13-14).",
+  "afc8e7a": "a4488e9"
+ },
+ "ete": {
+  "_note": "Vitesse selon le cap, ajustée sur les 290 liaisons côtières et de haute mer d'ORBIS en Méditerranée orientale (Égée, Levant, Égypte) : v = moyenne + amplitude × cos(cap − cap_rapide). Le cap le plus rapide (≈ 151°, vers le sud-sud-est) correspond au vent du nord-nord-ouest de l'été (vents étésiens).",
+  "source": "ORBIS v2, Stanford (W. Scheidel, E. Meeks), tables du réseau, CC BY 3.0 (https://purl.stanford.edu/mn425tz9757), copie dans le paquet cawd (S. Heath).",
+  "cap_rapide": 151,
+  "noeuds": {
+   "cote": [
+    3.31,
+    0.59
+   ],
+   "large": [
+    3.4,
+    0.86
+   ]
+  }
+ },
+ "saison": {
+  "source": "Végèce, Abrégé de l'art militaire IV, 39 (vers 390) ; ISBE, « Ships and Boats » (domaine public) : la saison de navigation allait d'avril à octobre, les navires restaient au port en hiver.",
+  "sure": [
+   [
+    5,
+    27
+   ],
+   [
+    9,
+    14
+   ]
+  ],
+  "risquee": [
+   [
+    3,
+    10
+   ],
+   [
+    11,
+    11
+   ]
+  ]
+ },
+ "derive_tempete": {
+  "mn_par_jour": 36,
+  "source": "James Smith, The Voyage and Shipwreck of St. Paul (1848 ; 4e éd. 1880, domaine public) : dérive du navire d'Alexandrie de Clauda à Malte, environ 36 milles par 24 heures, 480 milles en 13 jours et demi (Actes 27:27).",
+  "de": "aca2b0a",
+  "a": "a57835d",
+  "jours_bible": 14,
+  "mn_smith": 480
+ }
+}

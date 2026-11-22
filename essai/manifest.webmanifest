@@ -1,0 +1,16 @@
+{
+  "name": "Ginosko Bible",
+  "short_name": "Ginosko",
+  "description": "Lire la Bible en parallèle, retrouver son Journal d’étude, les cartes et la bibliothèque des études.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F4FA",
+  "theme_color": "#2B4FE0",
+  "icons": [
+    { "src": "icones/ginosko-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icones/ginosko-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icones/ginosko-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
