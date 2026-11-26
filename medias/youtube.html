@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Ginosko Bible — vidéo</title>
+<style>html,body{margin:0;height:100%;background:#0d0b24}iframe{border:0;width:100%;height:100%;display:block}p{color:#fff;font:15px system-ui;text-align:center;padding-top:40vh}</style>
+</head>
+<body>
+<!-- Lecteur YouTube posé sur une page du site de Ginosko : YouTube refuse les lecteurs intégrés dans une application
+     (adresse tauri://, sans « Referer ») ; ici il voit l'adresse https du site, et la vidéo se lit dans Ginosko. -->
+<script>
+  var id = new URLSearchParams(location.search).get("v") || "";
+  if (/^[A-Za-z0-9_-]{6,20}$/.test(id)) {
+    var f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    f.referrerPolicy = "strict-origin-when-cross-origin";
+    f.title = "Vidéo de présentation de Ginosko Bible";
+    document.body.appendChild(f);
+  } else {
+    document.body.innerHTML = "<p>Vidéo indisponible.</p>";
+  }
+</script>
+</body>
+</html>
