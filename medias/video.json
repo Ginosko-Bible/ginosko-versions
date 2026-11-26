@@ -1,5 +1,5 @@
 {
-  "_aide": "Vidéo de présentation de Ginosko Bible. mp4 : fichier de ce dossier, lu en continu. youtube : identifiant de la vidéo YouTube (non répertoriée), lue dans Ginosko par youtube.html ; vide = pas de bouton YouTube.",
+  "_aide": "Vidéo de présentation de Ginosko Bible. mp4 : fichier de ce dossier, lu en continu. youtube : identifiant de la vidéo YouTube (non répertoriée), lue dans Ginosko par youtube.html ; vide = pas de secours YouTube. YouTube n’est lu que si la lecture du fichier mp4 échoue.",
   "mp4": "presentation-ginosko.mp4",
-  "youtube": ""
+  "youtube": "Ef_BlKofVP4"
 }
